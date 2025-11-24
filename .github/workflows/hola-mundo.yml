@@ -1,0 +1,10 @@
+name: hola-mundo
+on: [push]
+jobs:
+  hola-mundo-job:
+    runs-on: ubunto-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v3
+      - name: Run script
+        run: python hola-mundo.py
